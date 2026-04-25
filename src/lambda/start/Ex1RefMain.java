@@ -1,6 +1,6 @@
-package ramda.start;
+package lambda.start;
 
-import ramda.Procedure;
+import lambda.Procedure;
 
 import java.util.Random;
 

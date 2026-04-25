@@ -1,4 +1,4 @@
-package ramda.start;
+package lambda.start;
 
 public class Ex0Main {
 

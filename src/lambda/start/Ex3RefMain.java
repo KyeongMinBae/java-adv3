@@ -1,11 +1,9 @@
-package ramda.start;
+package lambda.start;
 
-import ramda.Procedure;
+import lambda.Procedure;
 
-import java.util.Random;
-
-// 익명 클래스 사용
-public class Ex2RefMain {
+// 익명 클래스 사용, 변수 제거, 익명 클래스의 참조값을 매개변수(파라미터)에 직접 전달
+public class Ex3RefMain {
 
     public static void hello(Procedure procedure) {
         long startNs = System.nanoTime();
@@ -19,7 +17,7 @@ public class Ex2RefMain {
     }
 
     public static void main(String[] args) {
-        Procedure dice = new Procedure() {
+        hello(new Procedure() {
             @Override
             public void run() {
 
@@ -28,18 +26,16 @@ public class Ex2RefMain {
                 }
 
             }
-        };
+        });
 
-        Procedure sum = new Procedure() {
+        hello(new Procedure() {
             @Override
             public void run() {
                 for (int i = 1; i <= 3; i++) {
                     System.out.println("i = " + i);
                 }
             }
-        };
+        });
 
-        hello(dice);
-        hello(sum);
     }
 }
