@@ -3,7 +3,7 @@ package lambda.ex2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MaxExample {
+public class MapExample {
 
     // 고차 함수, 함수를 인자로 받아, 리스트의 각 요소를 변환
     public static List<String> map(List<String> list, StringFunction func) {
