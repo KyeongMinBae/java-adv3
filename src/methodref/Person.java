@@ -18,7 +18,7 @@ public class Person {
     }
 
     // 정적 메서드, 매개변수
-    public static String greeting(String name) {
+    public static String greetingWithNamed(String name) {
         return "Hello";
     }
 
@@ -33,7 +33,7 @@ public class Person {
 
     //
     // 인스턴스 메서드, 매개변수
-    public String introduce(int number) {
+    public String introduceWithNumber(int number) {
         return "I am " + name + ", my number is " + number;
     }
 }

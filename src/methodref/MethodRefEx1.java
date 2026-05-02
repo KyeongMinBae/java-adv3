@@ -17,8 +17,8 @@ public class MethodRefEx1 {
         Supplier<String> instanceMethod1 = () -> person.introduce();
         Supplier<String> instanceMethod2 = person::introduce; // 객체::인스턴스메서드
 
-        System.out.println("instanceMethod1: " + instanceMethod1);
-        System.out.println("instanceMethod2: " + instanceMethod2);
+        System.out.println("instanceMethod1: " + instanceMethod1.get());
+        System.out.println("instanceMethod2: " + instanceMethod2.get());
 
         // 3. 생성자 참조
         Supplier<Person> newPerson1 = () -> new Person();
