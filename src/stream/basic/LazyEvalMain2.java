@@ -40,7 +40,7 @@ public class LazyEvalMain2 {
                     int mapped = i * 10;
                     System.out.println("map() 실행: " + i + " -> " + mapped);
                     return mapped;
-                })
+                });
         System.out.println("== Stream API 종료 ==");
 
     }
